@@ -20,6 +20,33 @@ ul {
   background-color: #f1f1f1;
 }
 
+  .hoz {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.lihoz {
+  float: left;
+}
+
+.lihoz a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.lihoz a:hover:not(.active) {
+  background-color: #111;
+}
+
+.hozactive {
+  background-color: #04AA6D;
+}
 li a {
   display: block;
   color: #000;
@@ -92,13 +119,12 @@ footer {
 </style>
 </head>
 <body>
-<ul>
-  <li><a class="active" href="/index.html">Home</a></li>
-  <li><a href="/news.html">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
+<ul class="hoz">
+  <li class="lihoz"><a class="hozactive" href="/index.html">Home</a></li>
+  <li class="lihoz"><a href="/news.html">News</a></li>
+  <li class="lihoz"><a href="#contact">Contact</a></li>
+  <li class="lihoz"><a href="#about">About</a></li>
 </ul>
-
 <header>
   <h2>Tim's News</h2>
 </header>
