@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
    <body>
-       <video autoplay muted loop width="100%">
+       <video autoplay muted loop width="100%" >
 
     <source src="/rickroll.mp4"
             type="video/mp4">
@@ -13,6 +13,14 @@
             document.title = "Sus"
          }
          window.onload = setTitle;
+      var body = document.getElementById('body');
+      var audio = document.getElementById('video');
+
+      var loadData = function () {
+          video.play();
+      };
+
+      body.addEventListener('ontouchstart', loadData, false);
        </script>
    </body>
 </html>
