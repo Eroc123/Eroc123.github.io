@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Where I'm From by Eric</title>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop >  window.innerHeight-100 || document.documentElement.scrollTop >  window.innerHeight-100) {
+          document.getElementById("header").style.display = "none";
+          anicontent()
+
+        } else {
+          document.getElementById("header").style.display = "block";
+        }
+      }
+      function anicontent() {
+        var contentdiv = document.getElementById('content');
+        contentdiv.style.left = contentdiv.clientWidth;
+      }
+    </script>
+
+    <style>
+      html, body {
+        overflow-x: hidden;
+        overflow-y: visible;
+        padding: 0px;
+        margin: 0px;
+        font-family: "Segoe UI";
+      }
+      div.head {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("https://eroc123.github.io/backdrop.png");
+        background-size: cover;
+        position:relative;
+        width: 100%;
+        height: 100px;
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+        z-index: -1;
+      }
+      header h1 {
+        width: 100%;
+        align-items: center;
+        position: fixed;
+        transition-duration: 0.5s;
+        text-align: center;
+        font-weight: 500;
+        font-family: "Segoe UI";
+        font-size: 4rem;
+        color: #FFFFFF;
+        overflow: hidden;
+        z-index: -4;
+      }
+
+
+      div.content {
+        z-index: 200;
+        border-radius: 5px;
+
+      }
+
+      div.content h2 {
+        text-align: center;
+      }
+      div.content p {
+        margin-left: auto;
+        margin-right: auto;
+        width: 45%
+      }
+      div.content ul {
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%
+      }
+      div.content ul ul{
+        width: 100%;
+      }
+      /*bookmarks styling*/
+      /*windows 11 like themeing*/
+      div.bookmarks div.item .sign{
+        text-align: right;
+        float: right;
+        padding: 0px;
+        margin: 0px;
+        height:37px;
+
+      }
+      div.bookmarks .panel {
+        display: block;
+        background-color: white;
+        display: block;
+        overflow: hidden;
+        margin-left: auto;
+
+      }
+      div.bookmarks div.panel a{
+        color: black;
+        text-decoration: none;
+      }
+      div.bookmarks div.panel p{
+        color: black;
+        text-decoration: none;
+      }
+      div.bookmarks div.item {
+        display: flex;
+        width: 80%;
+        padding: 10px;
+        border-radius: 4px;
+        background-color: rgba(100, 100, 100, 0.1);
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      div.bookmarks div.item:hover {
+        background-color: rgba(100, 100, 100, 0.2);
+        cursor: pointer;
+      }
+      div.bookmarks div.subitem {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        border-radius: 4px;
+        background-color: rgba(100, 100, 100, 0.1);
+        display: block;
+      }
+
+      div.bookmarks div.subitem:hover {
+        background-color: rgba(100, 100, 100, 0.2);
+        cursor: pointer;
+      }
+      div.bookmarks h1 {
+        font-weight: normal;
+        font-size: 1.1rem;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+      }
+      div.bookmarks p {
+        padding: 0px;
+        margin: 0px;
+        font-size: 0.75rem;
+        font-weight: normal;
+        color: rgb(50, 50, 50);
+        width: 100%;
+      }
+      header h1 span {
+        font-size: 1.5rem;
+        margin-top: 0px;
+      }
+      header h1 {
+        margin-bottom: 6px;
+      }
+
+    </style>
+  </head>
+
+  <body onload="javascript:animate()">
+
+    <div class="head" id="head">
+      <header>
+        <h1 id="header">Where I'm From <br><span>a poem by Eric</span></h1>
+
+      </header>
+    </div>
+
+    <div class="content" id="content">
+      <p>
+        I am from roasted chestnuts,
+      </p>
+      <p>
+        from maple leaves and chilling wind.
+      </p>
+      <p>
+        I am from heavy clothing and short t-shirts,
+      </p>
+      <p>
+        snowing and steaming.
+      </p>
+    </div>
+    <div class="head" id="head">
+    </div>
+    <div class="content" id="content">
+      <p>
+        I am from the peach tree,
+      </p>
+      <p>
+        watched it grow from a sapling,
+      </p>
+      <p>
+        yet grew no fruit.
+      </p>
+    </div>
+    <div class="head" id="head">
+    </div>
+    <div class="content" id="content">
+      <p>
+        I am from small steamed buns,
+      </p>
+      <p>
+        steamed eggs, and dumplings.
+      </p>
+      <p>
+        From the cheap fast food
+      </p>
+      <p>
+        to the expansive hotpots.
+      </p>
+    </div>
+    <div class="head" id="head">
+    </div>
+    <div class="content" id="content">
+      <p>
+        I’m from sunny summers
+      </p>
+      <p>
+        and cloudy winters.
+      </p>
+      <p>
+        I am from the polluted air
+      </p>
+      <p>
+        (that barely allows you to see a few paces),
+      </p>
+      <p>
+        and the vibrant clear skies.
+      </p>
+    </div>
+    <div class="head" id="head">
+    </div>
+    <div class="content" id="content">
+      <p>
+        I am from the tall skyscrapers,
+      </p>
+      <p>
+        rumbling metros and honking cars.
+      </p>
+      <p>
+        From the crowded shops and fast delivery.
+      </p>
+    </div>
+    <div class="head" id="head">
+    </div>
+    <div class="content" id="content">
+      <p>
+        I am from weird superstitions;
+      </p>
+      <p>
+        Using umbrella indoors makes you short?
+      </p>
+      <p>
+        Money should always be given in figures of eight?
+      </p>
+    </div>
+    <div class="head" id="head">
+    </div>
+    <audio src="horse.ogg" autoplay='true' controls style="margin: 10px; margin-left: auto; margin-right: auto; width: 40%; display: flex;">
+    Your browser does not support the audio element.
+    </audio>
+
+  </body>
+  <script type="text/javascript">
+
+    async function height() {
+      var item = document.getElementsByClassName('subitem')
+      var item = document.getElementsByClassName('item')
+      var head = document.getElementsByClassName('head')
+
+      var i;
+      window.scrollTo(0, 0);
+      for (i = 0; i < head.length; i++) {
+        head[i].style.height =  window.innerHeight+'px'
+      }
+      var head = document.getElementsByClassName('ict')
+      var i;
+      for (i = 0; i < head.length; i++) {
+        head[i].style.height =  window.innerHeight+'px'
+      }
+      var i;
+      for (i = 0; i < item.length; i++) {
+        item[i].style.width =  window.innerWidth/10*8+'px'
+      }
+
+    }
+    async function animate() {
+      await height()
+
+      var headerpos = window.innerHeight;
+
+      var header = document.getElementById('header')
+      var nav = document.getElementById('content')
+      nav.style.left = "-"+nav.clientHeight+"px"
+
+      header.style.top = headerpos + "px";
+
+
+      var center = window.innerHeight/2;
+      var center = center-header.clientHeight/2;
+      console.log(center);
+      console.log(header.clientHeight);
+      animateheader(center, header)
+      await new Promise(r => setTimeout(r, 1000));
+      animatearrow()
+      console.log('Staring nav animation');
+
+    }
+    function animateheader(center, header) {
+      //Start of animation code
+      let id = null;
+      var headerpos = window.innerHeight;
+      clearInterval(id);
+      id = setInterval(frame, 5);
+      function frame() { //Animating header
+        if (headerpos < center+200) {
+          if (headerpos < center+60) {
+            if (headerpos < center+40) {
+              if (headerpos < center+20) {
+                if (headerpos < center) {
+
+                  return
+
+
+                } else {
+                  headerpos--;
+                  header.style.top = headerpos + "px";
+                }
+              } else {
+                headerpos--;
+                headerpos--;
+                header.style.top = headerpos + "px";
+              }
+            } else {
+              headerpos--;
+              headerpos--;
+              headerpos--;
+              header.style.top = headerpos + "px";
+            }
+          } else {
+            headerpos--;
+            headerpos--;
+            headerpos--;
+            headerpos--;
+            header.style.top = headerpos + "px";
+          }
+        } else {
+          headerpos--;
+          headerpos--;
+          headerpos--;
+          headerpos--;
+          headerpos--;
+          header.style.top = headerpos + "px";
+        }
+
+
+      }
+
+    }
+
+    function animatearrow() {
+      var arrow = document.getElementById('arrow')
+      arrow.classList.toggle('show')
+    }
+  </script>
+  <script>
+    function animatenav() {
+
+      //Start of animation code
+      var nav = document.getElementById('content')
+      let id = null;
+      var pos = -nav.clientWidth;
+      console.log(pos);
+      clearInterval(id);
+      id = setInterval(frame, 5);
+      function frame() { //Animating header
+        if (pos > -80) {
+            if (pos > -40) {
+                if (pos > -20) {
+                    if (pos > 0) {
+                      return;
+                    } else {
+                      pos++;
+                      nav.style.left = pos + "px";
+                    }
+
+                } else {
+                  pos++;
+                  nav.style.left = pos + "px";
+                }
+
+            } else {
+              pos++;
+              pos++;
+              nav.style.left = pos + "px";
+            }
+
+        } else {
+          pos++;
+          pos++;
+          pos++;
+          nav.style.left = pos + "px";
+        }
+    }
+  }
+
+  </script>
+</html>
