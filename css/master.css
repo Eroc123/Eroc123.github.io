@@ -2,7 +2,7 @@ html {
   font-family: Calibri, Arial, sans-serif;
 }
 body {
-  background-color: #0F0F0F;
+  background-color: #FFFFFF;
   color: #B0B0B0;
 }
 
@@ -11,10 +11,10 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #F3F3F3;
 }
 .header {
-  background-color: #666;
+  background-color: #F6F6F6;
   padding: 30px;
   text-align: center;
   font-size: 35px;
@@ -23,7 +23,7 @@ body {
 
 .info-card {
   padding: 5px;
-  background-color: #1F1F1F;
+  background-color: #F1F1F1;
   border-radius: 5px;
   width:230px;
   margin: 10px;
@@ -46,14 +46,14 @@ body {
 
 .hozli a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 .hozli a:hover:not(.active) {
-  background-color: #111;
+  background-color: #F1F1F1;
 }
 
 
@@ -76,7 +76,7 @@ body {
 }
 
 .active {
-  background-color: #04AA6D;
+  background-color: #DDDDDD;
 }
 nav {
   float: left;
@@ -92,7 +92,7 @@ nav ul {
 article {
   float: left;
   width: 76%;
-  background-color: #f1f1f1;
+  background-color: #1F1F1F;
   padding: 1%;
 }
 
