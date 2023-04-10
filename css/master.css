@@ -1,10 +1,12 @@
 html {
-  font-family: Calibri, Arial, sans-serif;
+  font-family: Poppins, sans-serif;
 }
 body {
   background-color: #FFFFFF;
-  color: #B0B0B0;
+  color: #505050;
+  margin:0;
 }
+
 
 .hozul {
   list-style-type: none;
@@ -78,17 +80,41 @@ body {
 .active {
   background-color: #DDDDDD;
 }
-nav {
-  float: left;
-  width: 20%;
-  background: #ccc;
-  padding: 1%;
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-nav ul {
-
+.content {
+  padding: 16px;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+.navbar {
+  background-color: #E5E5E5;
+}
+.navbar ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
+.navbar li {
+  float: left;
+}
+.navbar a {
+  background-color: #F3F3F3;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+}
+
 article {
   float: left;
   width: 76%;
@@ -113,26 +139,31 @@ section::after {
 }
 
 p {
-  font-family: Calibri, sans-serif;
-  font-size: 16pt;
+  font-family: Poppins, sans-serif;
 }
 h2 {
-  font-family: Calibri, sans-serif;
+  font-family: Poppins-light, sans-serif;
   font-size: 24pt;
 }
+
 .body {
-  text-align: center;
+  float:right;
 }
+.introduction p {
+  font-size:14pt;
+  text-align: left;
+}
+
 /* Style the footer */
-footer {
+.footer {
+  overflow-y:hidden;
+  float:left;
+  width:100%;
   background-color: #777;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
   color: white;
-}
-.news {
-   display: inline-flex;
-
 }
 
 @media (max-width: 600px) {
